@@ -1,0 +1,19 @@
+{
+  "name": "cypress-vs-playwright",
+  "version": "1.0.0",
+  "description": "Examples of Cypress and Playwright tests.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "e2e",
+    "cypress",
+    "playwright"
+  ],
+  "author": "Aleksandar Zeljkovic",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^10.0.3"
+  }
+}

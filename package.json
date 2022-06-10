@@ -4,7 +4,10 @@
   "description": "Examples of Cypress and Playwright tests.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "cy:run": "npx cypress run",
+    "cy:open": "npx cypress open",
+    "pw:run": "npx playwright test",
+    "pw:open": "PWDEBUG=console npx playwright test"
   },
   "keywords": [
     "e2e",
@@ -14,6 +17,7 @@
   "author": "Aleksandar Zeljkovic",
   "license": "ISC",
   "dependencies": {
-    "cypress": "^10.0.3"
+    "cypress": "^10.0.3",
+    "@playwright/test": "^1.22.2"
   }
 }

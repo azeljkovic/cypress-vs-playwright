@@ -7,6 +7,7 @@
     "cy:run": "npx cypress run",
     "cy:open": "npx cypress open",
     "pw:run": "npx playwright test",
+    "pw:run-headed": "npx playwright test --headed",
     "pw:open": "PWDEBUG=1 npx playwright test"
   },
   "keywords": [
@@ -18,6 +19,6 @@
   "license": "ISC",
   "devDependencies": {
     "@playwright/test": "^1.22.2",
-    "cypress": "^10.1.0"
+    "cypress": "^10.3.0"
   }
 }

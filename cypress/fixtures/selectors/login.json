@@ -1,0 +1,5 @@
+{
+  "username": "[data-test='signin-username']",
+  "password": "[data-test='signin-password']",
+  "submit": "[data-test='signin-submit']"
+}

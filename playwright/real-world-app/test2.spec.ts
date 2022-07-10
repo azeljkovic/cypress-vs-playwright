@@ -1,6 +1,6 @@
-const { test, expect, selectors} = require('@playwright/test');
-const loginSelectors = require("../fixtures/selectors/login.json");
-const mainSelectors = require("../fixtures/selectors/main.json");
+import { test, expect, type Page } from '@playwright/test';
+import loginSelectors from '../fixtures/selectors/login.json';
+import mainSelectors from '../fixtures/selectors/main.json';
 
 test.beforeEach(async ({ page }) => {
   await page.goto('/');

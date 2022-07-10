@@ -1,0 +1,5 @@
+{
+  "username": "#username",
+  "password": "#password",
+  "submit": "[data-test='signin-submit']"
+}

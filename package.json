@@ -4,8 +4,8 @@
   "description": "Examples of Cypress and Playwright tests.",
   "main": "index.js",
   "scripts": {
-    "cy:run": "npx cypress run",
-    "cy:open": "npx cypress open",
+    "cy:run": "npx cypress run --browser chrome",
+    "cy:open": "npx cypress open --browser chrome --e2e",
     "pw:run": "npx playwright test",
     "pw:run-headed": "npx playwright test --headed",
     "pw:debug": "PWDEBUG=1 npx playwright test"

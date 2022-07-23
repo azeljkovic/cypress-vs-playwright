@@ -17,8 +17,8 @@ describe('API requests', () => {
         cy.get('[data-test="nav-top-new-transaction"]').click();
         cy.get('[data-test="users-list"]').children().should('have.length', 4);
         cy.get('[data-test="users-list"]').children().eq(2).click();
-        cy.get('[data-test="transaction-create-amount-input"]').type('5');
-        cy.get('[data-test="transaction-create-description-input"]').type('big bucks');
+        cy.get('#amount').type('5');
+        cy.get('#transaction-create-description-input').type('big bucks');
         cy.get('[data-test="transaction-create-submit-payment"]').click();
 
         cy.wait('@transaction').should(({ request, response }) => {

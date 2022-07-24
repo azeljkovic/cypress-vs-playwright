@@ -1,14 +1,9 @@
 import { test, expect, request } from "@playwright/test";
 
 
-test('should do a login API call', async () => {
-    // context that will issue http request
-    const context = await request.newContext({
-        baseURL: 'http://localhost:3001',
-    });
-
+test('should do a login API call', async ({ request }) => {
     // send login request
-    const rsp = await context.post('/login', {
+    const rsp = await request.post('http://localhost:3001/login', {
         data: {
             password: 's3cret',
             username: 'Katharina_Bernier',

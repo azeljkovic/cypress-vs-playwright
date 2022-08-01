@@ -4,7 +4,7 @@ on:
 jobs:
   cypress-run:
     runs-on: self-hosted
-    container: cypress/browsers:node12.13.0-chrome78-ff70
+    # container: cypress/browsers:node12.13.0-chrome78-ff70
     steps:
       - name: Checkout
         uses: actions/checkout@v2
@@ -12,3 +12,6 @@ jobs:
         uses: cypress-io/github-action@v4.2.0
         with:
           browser: chrome
+        env:
+          CYPRESS_host: localhost
+          CYPRESS_port: 3000

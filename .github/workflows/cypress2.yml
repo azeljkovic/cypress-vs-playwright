@@ -1,11 +1,14 @@
-name: Cypress Tests
+name: Cypress Tests 2
 on:
   workflow_dispatch:
 jobs:
   cypress-run:
     runs-on: self-hosted
+    container: cypress/browsers:node12.13.0-chrome78-ff70
     steps:
       - name: Checkout
         uses: actions/checkout@v2
       - name: Cypress run
         uses: cypress-io/github-action@v4.2.0
+        with:
+          browser: chrome

@@ -13,6 +13,6 @@ jobs:
         with:
           browser: chrome
           spec: cypress/e2e/real-world-app/*
-        env:
-          CYPRESS_host: localhost
-          CYPRESS_port: 3000
+#        env:
+#          CYPRESS_host: localhost
+#          CYPRESS_port: 3000

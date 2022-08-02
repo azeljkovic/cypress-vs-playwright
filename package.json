@@ -4,7 +4,7 @@
   "description": "Examples of Cypress and Playwright tests.",
   "main": "index.js",
   "scripts": {
-    "cy:run": "npx cypress run --browser chrome",
+    "cy:run": "npx cypress run --browser chrome --spec 'cypress/e2e/real-world-app'",
     "cy:open": "npx cypress open --browser chrome --e2e",
     "pw:run": "npx playwright test",
     "pw:run-headed": "npx playwright test --headed",

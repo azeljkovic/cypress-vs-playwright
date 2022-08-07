@@ -120,3 +120,43 @@ Some interesting stats around Playwright code (Jun 2022):
     <img src="images/githubStarHistory.png" alt="GitHub stars history" width="600"/>  
     <figcaption>GitHub stars history</figcaption>
 </figure> 
+
+# Setup and configuration
+## Cypress
+
+`npm install cypress --save-dev`
+
+or
+
+`yarn add cypress --dev`
+
+## Playwright
+There are two different types of Playwright installation:
+
+- Playwright library – minimal and browser automation focused.  
+- Playwright test – Playwright library extended with the testing framework, 
+enables assertions, reporting, parallelization, etc.
+Focused on e2e test automation.
+
+Two ways to install Playwright:
+1. manually – install the Playwright test:
+
+`npm install -D @playwright/test`
+
+And then install browsers:
+
+`npx playwright install`
+
+2. scaffolding a new project:
+
+`npm init playwright@latest`
+
+# Writing some tests
+## Application under test
+https://github.com/cypress-io/cypress-realworld-app  
+http://localhost:3000
+
+## Cypress
+
+## Playwright
+

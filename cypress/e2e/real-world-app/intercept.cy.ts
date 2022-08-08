@@ -1,4 +1,5 @@
 import object from '../../fixtures/xstate.json';
+import notificationsObj from'../../fixtures/notifications.json';
 
 describe('API requests', () => {
     it('intercept request', () => {
@@ -28,12 +29,12 @@ describe('API requests', () => {
     });
 
     it('stub the response', () => {
-        cy.intercept('POST', '/transactions',
+        cy.intercept('GET', '/notifications',
             {
-                statusCode: 500,
-                body: { error: "Server error!" },
+                statusCode: 200,
+                body: notificationsObj,
                 delayMs: 50,
-            }).as('transaction');
+            }).as('notifications');
 
         // login via API
         cy.request('POST', 'http://localhost:3001/login', {
@@ -45,14 +46,7 @@ describe('API requests', () => {
         localStorage.setItem("authState", JSON.stringify(object));
 
         cy.visit('http://localhost:3000');
-        cy.get('[data-test="nav-top-new-transaction"]').click();
-        cy.get('[data-test="users-list"]').children().should('have.length', 4);
-        cy.get('[data-test="users-list"]').children().eq(2).click();
-        cy.get('[data-test="transaction-create-amount-input"]').type('5');
-        cy.get('[data-test="transaction-create-description-input"]').type('big bucks');
-        cy.get('[data-test="transaction-create-submit-payment"]').click();
-
-        cy.wait('@transaction');
-        cy.get(".MuiAlert-message").should("have.text", "Error occurred, please try again later!")
+        cy.wait('@notifications');
+        cy.get('[data-test="nav-top-notifications-count"] > .MuiBadge-badge').should('have.text', '99+')
     });
 });

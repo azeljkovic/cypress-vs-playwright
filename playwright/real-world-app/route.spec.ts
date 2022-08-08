@@ -1,17 +1,18 @@
 import { test, expect, type Page } from '@playwright/test';
 import loginSelectors from '../fixtures/selectors/login.json';
 import mainSelectors from '../fixtures/selectors/main.json';
+import notificationsObj from '../fixtures/notifications.json';
 
 test.beforeEach(async ({ page }) => {
     await page.goto('/');
 });
 
 test('stub the response', async ({ page }) => {
-    await page.route('**/transactions', async route => {
+    await page.route('**/notifications', async route => {
         await route.fulfill({
-            status: 500,
+            status: 200,
             contentType: 'application/json',
-            body: '{"error": "Server error!"}',
+            body: JSON.stringify(notificationsObj),
         });
     });
 
@@ -20,15 +21,7 @@ test('stub the response', async ({ page }) => {
     await page.click(loginSelectors.submit);
     await expect(page.locator(mainSelectors.usernameLabel)).not.toBeVisible();
 
-    await page.click('[data-test="nav-top-new-transaction"]');
-    await expect(page.locator('[data-test="users-list"] > li')).toHaveCount(4);
-    await page.click('[data-test="users-list"]:nth-child(2)');
-    await page.fill('#amount', '5');
-    await page.fill('#transaction-create-description-input', 'big bucks');
-    await page.pause();
-    await page.click('[data-test="transaction-create-submit-payment"]');
-
-    await expect(page.locator('.MuiAlert-message')).toHaveText('Error occurred, please try again later!');
+    await expect(page.locator('[data-test="nav-top-notifications-count"] > .MuiBadge-badge')).toHaveText('99+');
 
     // wait for 3 seconds to see what's happening in headed mode
     await page.waitForTimeout(3000);

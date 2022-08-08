@@ -20,6 +20,8 @@ test('make a transaction and wait for the response', async ({ page }) => {
     await page.click('[data-test="transaction-create-submit-payment"]');
     await page.waitForResponse('http://localhost:3001/transactions');
 
+    await expect(page.locator('.MuiAlert-message')).toHaveText('Transaction Submitted!');
+
 
     // wait for 3 seconds to see what's happening in headed mode
     await page.waitForTimeout(3000);

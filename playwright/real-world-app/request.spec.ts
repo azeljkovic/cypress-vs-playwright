@@ -18,7 +18,7 @@ test('should do a login API call', async ({ request }) => {
 
 
 test('make a transaction and wait for the response', async ({ page }) => {
-    await page.goto('/');
+    await page.goto('/')
 
     await page.fill(loginSelectors.username, process.env.USERNAME); // env file is defined in playwright.config.js
     await page.fill(loginSelectors.password, process.env.PASSWORD);

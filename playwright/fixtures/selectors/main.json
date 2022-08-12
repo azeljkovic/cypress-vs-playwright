@@ -1,3 +1,10 @@
 {
-  "usernameLabel": "[data-test='sidenav-username']"
+  "usernameLabel": "[data-test='sidenav-username']",
+  "newTransactionButton": "[data-test='nav-top-new-transaction']",
+  "usersList": "[data-test='users-list'] > li",
+  "user": "[data-test='users-list']:nth-child(2)",
+  "transactionAmount": "#amount",
+  "transactionDescription": "#transaction-create-description-input",
+  "submitTransactionButton": "[data-test='transaction-create-submit-payment']",
+  "notificationsBadge": ".MuiAlert-message"
 }

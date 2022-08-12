@@ -1,18 +1,18 @@
 describe('make API requests', () => {
   it('basic API request', () => {
     cy.request('POST', 'http://localhost:3001/login', {
-      password: 's3cret',
-      username: 'Katharina_Bernier',
+      username: Cypress.env('username'),
+      password: Cypress.env('password'),
     });
   });
 
   it('API login test', () => {
     cy.request('POST', 'http://localhost:3001/login', {
-      password: 's3cret',
-      username: 'Katharina_Bernier',
+      username: Cypress.env('username'),
+      password: Cypress.env('password'),
     }).should(response => {
       expect(response.status).to.eq(200);
-      expect(response.body.user.email).to.eq('Norene39@yahoo.com');
+      expect(response.body.user.email).to.eq(Cypress.env('email'));
     });
   });
 });

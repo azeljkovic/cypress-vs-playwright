@@ -34,5 +34,5 @@ test('make a transaction and wait for the response', async ({ page }) => {
   await expect(page.locator('.MuiAlert-message')).toHaveText('Transaction Submitted!');
 
   // wait for 3 seconds to see what's happening in headed mode
-  await page.waitForTimeout(3000);
+  await page.waitForTimeout(2000);
 });

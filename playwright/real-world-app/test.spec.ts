@@ -6,5 +6,5 @@ test('login via UI', async ({ page }) => {
   await page.fill('#password', 's3cret');
   await page.click('[data-test="signin-submit"]');
   // wait for 3 seconds to see what's happening in headed mode
-  await page.waitForTimeout(3000);
+  await page.waitForTimeout(2000);
 });

@@ -12,5 +12,5 @@ test('login via UI', async ({ page }) => {
   await page.click(loginSelectors.submit);
   await expect(page.locator(mainSelectors.usernameLabel)).not.toBeVisible();
   // wait for 3 seconds to see what's happening in headed mode
-  await page.waitForTimeout(3000);
+  await page.waitForTimeout(2000);
 });

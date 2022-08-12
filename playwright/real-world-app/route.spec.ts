@@ -26,5 +26,5 @@ test('stub the response', async ({ page }) => {
   ).toHaveText('99+');
 
   // wait for 3 seconds to see what's happening in headed mode
-  await page.waitForTimeout(3000);
+  await page.waitForTimeout(2000);
 });

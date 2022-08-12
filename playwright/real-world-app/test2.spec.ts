@@ -1,4 +1,4 @@
-import { test, expect, type Page } from '@playwright/test';
+import { test, expect } from '@playwright/test';
 import loginSelectors from '../fixtures/selectors/login.json';
 import mainSelectors from '../fixtures/selectors/main.json';
 

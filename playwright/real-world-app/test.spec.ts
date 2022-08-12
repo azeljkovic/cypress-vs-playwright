@@ -1,4 +1,4 @@
-import { test, expect, type Page } from '@playwright/test';
+import { test } from '@playwright/test';
 
 test('login via UI', async ({ page }) => {
   await page.goto('http://localhost:3000');

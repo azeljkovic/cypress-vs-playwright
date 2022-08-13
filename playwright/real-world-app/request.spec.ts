@@ -16,7 +16,7 @@ test('should do a login API call', async ({ request }) => {
 });
 
 test('make a transaction and wait for the response', async ({ page }) => {
-  await page.goto('/');
+  await page.goto('/signin');
 
   await page.fill(loginSelectors.username, process.env.USERNAME); // env file is defined in playwright.config.js
   await page.fill(loginSelectors.password, process.env.PASSWORD);
@@ -31,8 +31,8 @@ test('make a transaction and wait for the response', async ({ page }) => {
   await page.click(mainSelectors.submitTransactionButton);
   await page.waitForResponse('http://localhost:3001/transactions');
 
-  await expect(page.locator(mainSelectors.notificationsBadge)).toHaveText('Transaction Submitted!');
+  await expect(page.locator(mainSelectors.transactionSuccessMessage)).toHaveText('Transaction Submitted!');
 
-  // wait for 3 seconds to see what's happening in headed mode
-  await page.waitForTimeout(2000);
+  // wait for 1 second1 to see what's happening in headed mode
+  await page.waitForTimeout(1000);
 });

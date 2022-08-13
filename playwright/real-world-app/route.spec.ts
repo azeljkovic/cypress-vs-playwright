@@ -4,7 +4,7 @@ import mainSelectors from '../fixtures/selectors/main.json';
 import notificationsObj from '../fixtures/notifications.json';
 
 test.beforeEach(async ({ page }) => {
-  await page.goto('/');
+  await page.goto('/signin');
 });
 
 test('stub the response', async ({ page }) => {
@@ -21,10 +21,8 @@ test('stub the response', async ({ page }) => {
   await page.click(loginSelectors.submit);
   await expect(page.locator(mainSelectors.usernameLabel)).not.toBeVisible();
 
-  await expect(
-    page.locator('[data-test="nav-top-notifications-count"] > .MuiBadge-badge'),
-  ).toHaveText('99+');
+  await expect(page.locator(mainSelectors.notificationsBadge)).toHaveText('99+');
 
-  // wait for 3 seconds to see what's happening in headed mode
-  await page.waitForTimeout(2000);
+  // wait for 1 second to see what's happening in headed mode
+  await page.waitForTimeout(1000);
 });

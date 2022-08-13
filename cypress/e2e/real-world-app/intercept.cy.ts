@@ -13,7 +13,7 @@ describe('API requests', () => {
     });
     localStorage.setItem('authState', JSON.stringify(object));
 
-    cy.visit('/');
+    cy.visit('/signin');
     cy.get(selectors.newTransactionButton).click();
     cy.get(selectors.usersList).children().should('have.length', 4);
     cy.get(selectors.usersList).children().eq(2).click();
@@ -41,11 +41,8 @@ describe('API requests', () => {
     });
     localStorage.setItem('authState', JSON.stringify(object));
 
-    cy.visit('http://localhost:3000');
+    cy.visit('/signin');
     cy.wait('@notifications');
-    cy.get(selectors.notificationsBadge).should(
-      'have.text',
-      '99+',
-    );
+    cy.get(selectors.notificationsBadge).should('have.text', '99+');
   });
 });

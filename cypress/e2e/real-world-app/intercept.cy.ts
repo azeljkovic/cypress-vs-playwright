@@ -25,6 +25,8 @@ describe('API requests', () => {
       expect(response.statusCode).to.equals(200);
       expect(response.body.transaction.status).to.equals('complete');
     });
+
+    cy.get(selectors.transactionSuccessMessage).should('have.text', 'Transaction Submitted!');
   });
 
   it('stub the response', () => {

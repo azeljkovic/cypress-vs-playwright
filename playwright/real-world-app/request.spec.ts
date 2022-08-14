@@ -10,7 +10,7 @@ test('should do a login API call', async ({ request }) => {
       password: process.env.PASSWORD,
     },
   });
-  let body = await response.json();
+  const body = await response.json();
   expect(response.ok()).toBeTruthy();
   expect(body.user.email).toEqual(process.env.EMAIL);
 });
@@ -28,9 +28,16 @@ test('make a transaction and wait for the response', async ({ page }) => {
   await page.click(mainSelectors.user);
   await page.fill(mainSelectors.transactionAmount, '5');
   await page.fill(mainSelectors.transactionDescription, 'big bucks');
-  await page.click(mainSelectors.submitTransactionButton);
-  await page.waitForResponse('http://localhost:3001/transactions');
 
+  const [response] = await Promise.all([
+    page.waitForResponse('http://localhost:3001/transactions'),
+    await page.click(mainSelectors.submitTransactionButton),
+  ]);
+
+  const body = await response.json();
+
+  await expect(response.ok()).toBeTruthy();
+  expect(body.transaction.status).toEqual('complete');
   await expect(page.locator(mainSelectors.transactionSuccessMessage)).toHaveText('Transaction Submitted!');
 
   // wait for 1 second1 to see what's happening in headed mode

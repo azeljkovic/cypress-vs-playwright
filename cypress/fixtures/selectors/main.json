@@ -5,5 +5,6 @@
   "transactionAmount": "#amount",
   "transactionDescription": "#transaction-create-description-input",
   "submitTransactionButton": "[data-test='transaction-create-submit-payment']",
+  "transactionSuccessMessage": ".MuiAlert-message",
   "notificationsBadge": "[data-test='nav-top-notifications-count'] > .MuiBadge-badge"
 }

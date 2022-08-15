@@ -153,7 +153,5 @@ And then install browsers:
 https://github.com/cypress-io/cypress-realworld-app  
 http://localhost:3000
 
-## Cypress
-
-## Playwright
+## !Show me the code!
 

@@ -1,5 +1,5 @@
-import loginSelectors from '../../fixtures/selectors/login.json';
-import mainSelectors from '../../fixtures/selectors/main.json';
+import loginSelectors from '../fixtures/selectors/login.json';
+import mainSelectors from '../fixtures/selectors/main.json';
 
 describe('simple test', () => {
   beforeEach(() => {

@@ -1,6 +1,6 @@
-import object from '../../fixtures/xstate.json';
-import notificationsObj from '../../fixtures/notifications.json';
-import selectors from '../../fixtures/selectors/main.json';
+import object from '../fixtures/xstate.json';
+import notificationsObj from '../fixtures/notifications.json';
+import selectors from '../fixtures/selectors/main.json';
 
 describe('API requests', () => {
   it('intercept request', () => {

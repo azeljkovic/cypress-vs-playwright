@@ -4,11 +4,8 @@
 
 # About me
 
-Website: https://www.zeljkovic.sh  
-
-GitHub: https://github.com/azeljkovic  
-LinkedIn: https://www.linkedin.com/in/a-zeljkovic  
-Twitter: https://twitter.com/a_zeljkovic
+### Website: https://www.zeljkovic.sh
+### Email: [aleksandar@zeljkovic.sh]() 
 
 # Technical details and architecture
 ## Cypress

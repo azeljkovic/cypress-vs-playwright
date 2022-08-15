@@ -13,7 +13,8 @@ describe('API requests', () => {
     });
     localStorage.setItem('authState', JSON.stringify(object));
 
-    cy.visit('/signin');
+    // start the scenario
+    cy.visit('/');
     cy.get(selectors.newTransactionButton).click();
     cy.get(selectors.usersList).children().should('have.length', 4);
     cy.get(selectors.usersList).children().eq(2).click();
@@ -43,7 +44,7 @@ describe('API requests', () => {
     });
     localStorage.setItem('authState', JSON.stringify(object));
 
-    cy.visit('/signin');
+    cy.visit('/');
     cy.wait('@notifications');
     cy.get(selectors.notificationsBadge).should('have.text', '99+');
   });

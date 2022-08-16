@@ -23,6 +23,7 @@
   "devDependencies": {
     "@playwright/test": "^1.25.0",
     "cypress": "^10.5.0",
+    "cypress-mochawesome-reporter": "^3.2.2",
     "dotenv": "^16.0.1",
     "eslint": "^8.21.0",
     "eslint-config-prettier": "^8.5.0",

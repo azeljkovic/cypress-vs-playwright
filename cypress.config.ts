@@ -8,8 +8,10 @@ export default defineConfig({
     viewportHeight: 768,
     viewportWidth: 1024,
     videoCompression: 0,
+    reporter: 'cypress-mochawesome-reporter',
     setupNodeEvents(on, config) {
       // implement node event listeners here
+      require('cypress-mochawesome-reporter/plugin')(on);
     },
   },
 });

@@ -4,6 +4,7 @@ export default defineConfig({
   e2e: {
     baseUrl: 'http://localhost:3000',
     watchForFileChanges: true,
+    defaultCommandTimeout: 5000,
     retries: 1,
     viewportHeight: 768,
     viewportWidth: 1024,

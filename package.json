@@ -8,8 +8,8 @@
     "cy:open": "npx cypress open --browser chrome --e2e",
     "pw:run": "npx playwright test",
     "pw:run-headed": "npx playwright test --headed",
-    "pw:run-test": "npx playwright test playwright/tests/request2.spec.ts --headed",
-    "pw:debug": "npx playwright test playwright/tests/uiLogin1.spec.ts --debug",
+    "pw:run-test": "npx playwright test playwright/tests/uiLogin2.spec.ts --headed",
+    "pw:debug": "npx playwright test playwright/tests/uiLogin2.spec.ts --debug",
     "pw:run-parallel": "npx playwright test --workers=2",
     "pw:generate-storage-state": "npx playwright test playwright/helpers/auth.spec.ts"
   },

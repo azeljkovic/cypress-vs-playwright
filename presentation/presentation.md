@@ -8,59 +8,13 @@
 ### Email: [aleksandar@zeljkovic.sh]() 
 
 # Technical details and architecture
-## Cypress
 
-> Fast, easy and reliable testing for anything that runs in a browser.  
-> *Cypress*
+|                                      | <figure style="text-align: center;">     <img src="images/cypress.png" alt="Cypress logo" width="200"/>   </figure>                                                                                              | <figure style="text-align: center;">     <img src="images/playwright.png" alt="Playwright logo" width="200"/>   </figure>                                                    |
+|--------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Language support                     | <figure style="text-align: center;">     <img src="images/cypressSupportedLanguages.png" alt="Languages supported by Cypress" width="250"/>   </figure>                                                          | <figure style="text-align: center;">     <img src="images/playwrightSupportedLanguages.png" alt="Languages supported by Playwright" width="550"/>   </figure>                |
+| Browser support                      | <figure style="text-align: center;">     <img src="images/cypressSupportedBrowsers.png" alt="Browsers supported by Cypress" width="350"/>   </figure> _Notes_: https://docs.cypress.io/guides/references/roadmap | <figure style="text-align: center;">     <img src="images/playwrightSupportedBrowsers.png" alt="Browsers supported by Playwright" width="550"/>   </figure>                  |
+| GitHub repository language breakdown | <figure style="text-align: center;">     <img src="images/cypressRepositoryLanguages.png" alt="Cypress GitHub repository language breakdown" width="500"/>   </figure>                                           | <figure style="text-align: center;">     <img src="images/playwrightRepositoryLanguages.png" alt="Playwright GitHub repository language breakdown" width="500"/>   </figure> |
 
-<figure style="text-align: center;">
-    <img src="images/cypressSupportedLanguages.png" alt="Languages supported by Cypress" width="250"/>  
-    <figcaption>Languages supported by Cypress</figcaption>
-</figure>
-
-<br />
-<br />
-
-<figure style="text-align: center;">
-    <img src="images/cypressSupportedBrowsers.png" alt="Browsers supported by Cypress" width="350"/>  
-    <figcaption>Browsers supported by Cypress</figcaption>
-</figure>  
-
-*Notes:*
- - https://github.com/cypress-io/cypress/issues?q=is%3Aissue+is%3Aopen+sort%3Acomments-desc
- - https://docs.cypress.io/guides/references/roadmap
-
-<figure style="text-align: center;">
-    <img src="images/cypressRepositoryLanguages.png" alt="Cypress GitHub repository language breakdown" width="500"/>  
-    <figcaption>Cypress GitHub repository language breakdown</figcaption>
-</figure>  
-
-
-## Playwright
-
-> Playwright is a framework for Web Testing and Automation. It allows testing Chromium, Firefox and WebKit with a single API.  
-> *Playwright*
-
-<figure style="text-align: center;">
-    <img src="images/playwrightSupportedLanguages.png" alt="Languages supported by Playwright" width="550"/>  
-    <figcaption>Languages supported by Playwright</figcaption>
-</figure>
-
-<br />
-<br />
-  
-<figure style="text-align: center;">
-    <img src="images/playwrightSupportedBrowsers.png" alt="Browsers supported by Playwright" width="550"/>  
-    <figcaption>Browsers supported by Playwright</figcaption>
-</figure>  
-
-*Notes:*
- - https://github.com/microsoft/playwright/issues?q=is%3Aissue+is%3Aopen+sort%3Acomments-desc
-
-<figure style="text-align: center;">
-    <img src="images/playwrightRepositoryLanguages.png" alt="Playwright GitHub repository language breakdown" width="500"/>  
-    <figcaption>Playwright GitHub repository language breakdown</figcaption>
-</figure> 
 
 # Documentation, community and support
 ## Cypress
@@ -72,10 +26,6 @@ https://discord.gg/bkcR8bvUBZ
 
 Cypress Ambassadors: “Our network of Cypress experts, dedicated to spreading knowledge, sharing best practices, and building community.”
 
-Additional prominent community-powered Cypress resources are:
-
-https://glebbahmutov.com/blog – a blog written by Gleb Bahmutov  
-https://filiphric.com/blog – a blog written by Filip Hric
 
 ## Playwright
 https://playwright.dev/docs/intro  
@@ -84,7 +34,7 @@ https://github.com/microsoft/playwright/issues
 https://stackoverflow.com/questions/tagged/playwright  
 https://aka.ms/playwright-slack  
 
-Ambassador program announced...
+Ambassadors program announced...
 
 # Pace of development
 ## Cypress

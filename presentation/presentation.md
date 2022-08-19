@@ -5,11 +5,13 @@
 # About me
 
 ### Website: https://www.zeljkovic.sh
-### Email: [aleksandar@zeljkovic.sh]() 
+### LinkedIn: https://www.linkedin.com/in/a-zeljkovic
+### Twitter: https://twitter.com/a_zeljkovic
+### Email: [aleksandar@zeljkovic.sh]()
 
 # Technical details and architecture
 
-|                                      | <figure style="text-align: center;">     <img src="images/cypress.png" alt="Cypress logo" width="200"/>   </figure>                                                                                              | <figure style="text-align: center;">     <img src="images/playwright.png" alt="Playwright logo" width="200"/>   </figure>                                                    |
+|                                      | <figure style="text-align: center;">     <img src="images/cypress.png" alt="Cypress logo" width="150"/>   </figure>                                                                                              | <figure style="text-align: center;">     <img src="images/playwright.png" alt="Playwright logo" width="150"/>   </figure>                                                    |
 |--------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Language support                     | <figure style="text-align: center;">     <img src="images/cypressSupportedLanguages.png" alt="Languages supported by Cypress" width="250"/>   </figure>                                                          | <figure style="text-align: center;">     <img src="images/playwrightSupportedLanguages.png" alt="Languages supported by Playwright" width="550"/>   </figure>                |
 | Browser support                      | <figure style="text-align: center;">     <img src="images/cypressSupportedBrowsers.png" alt="Browsers supported by Cypress" width="350"/>   </figure> _Notes_: https://docs.cypress.io/guides/references/roadmap | <figure style="text-align: center;">     <img src="images/playwrightSupportedBrowsers.png" alt="Browsers supported by Playwright" width="550"/>   </figure>                  |
@@ -17,49 +19,25 @@
 
 
 # Documentation, community and support
-## Cypress
-https://docs.cypress.io  
-https://www.youtube.com/Cypressio  
-https://github.com/cypress-io/cypress/issues  
-https://stackoverflow.com/questions/tagged/cypress  
-https://discord.gg/bkcR8bvUBZ  
-
-Cypress Ambassadors: “Our network of Cypress experts, dedicated to spreading knowledge, sharing best practices, and building community.”
-
-
-## Playwright
-https://playwright.dev/docs/intro  
-https://www.youtube.com/c/Playwrightdev  
-https://github.com/microsoft/playwright/issues  
-https://stackoverflow.com/questions/tagged/playwright  
-https://aka.ms/playwright-slack  
-
-Ambassadors program announced...
-
-# Pace of development
-## Cypress
-
-https://github.com/cypress-io/cypress  
-https://docs.cypress.io/guides/references/changelog  
-https://docs.cypress.io/guides/references/roadmap  
-
-Some interesting stats around Cypress code (Jun 2022):  
-- 38.9k stars  
-- 2.5k opened/7.9k closed issues  
-- ~360 contributors  
-- major releases are made approximately 3 times a year, with several minor/patches in between
+|                    | <figure style="text-align: center;">     <img src="images/cypress.png" alt="Cypress logo" width="150"/>   </figure> | <figure style="text-align: center;">     <img src="images/playwright.png" alt="Playwright logo" width="150"/>   </figure> |
+|--------------------|---------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------|
+| Docs               | https://docs.cypress.io                                                                                             | https://playwright.dev/docs/intro                                                                                         |
+| YouTube            | https://www.youtube.com/Cypressio                                                                                   | https://www.youtube.com/c/Playwrightdev                                                                                   |
+| GitHub issues      | https://github.com/cypress-io/cypress/issues                                                                        | https://github.com/microsoft/playwright/issues                                                                            |
+| StackOverflow      | https://stackoverflow.com/questions/tagged/cypress                                                                  | https://stackoverflow.com/questions/tagged/playwright                                                                     |
+| Chat               | https://discord.gg/bkcR8bvUBZ                                                                                       | https://aka.ms/playwright-slack                                                                                           |
+| Ambassador program | https://www.cypress.io/ambassadors/                                                                                 | Announced...                                                                                                              |
 
 
-## Playwright
+# Pace of development (June 2022)
 
-https://github.com/microsoft/playwright  
-https://github.com/microsoft/playwright/releases  
-
-Some interesting stats around Playwright code (Jun 2022):  
-- 39.1k stars
-- ~540 opened/5.1k closed issues
-- ~240 contributors
-- major releases are made monthly, with bug fixes and browser updates in between
+|                      | <figure style="text-align: center;">     <img src="images/cypress.png" alt="Cypress logo" width="150"/>   </figure> | <figure style="text-align: center;">     <img src="images/playwright.png" alt="Playwright logo" width="150"/>   </figure> |
+|----------------------|---------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------|
+| Release cycle        | Major releases are made approximately 3 times a year, with several minor/patches in between.                        | Major releases are made monthly, with bug fixes and browser updates in between.                                           |
+| Changelog            | https://docs.cypress.io/guides/references/changelog                                                                 | https://github.com/microsoft/playwright/releases                                                                          |
+| GitHub stars         | 38.9k                                                                                                               | 39.1k                                                                                                                     |
+| Opened/Closed issues | 2.5k/5.1k                                                                                                           | ~540/5.1k                                                                                                                 |
+| GitHub contributors  | ~360                                                                                                                | ~240                                                                                                                      |
 
 ---
 
@@ -68,40 +46,27 @@ Some interesting stats around Playwright code (Jun 2022):
     <figcaption>GitHub stars history</figcaption>
 </figure> 
 
-# Setup and configuration
-## Cypress
+# Setup
 
-`npm install cypress --save-dev`
-
-or
-
-`yarn add cypress --dev`
-
-## Playwright
 There are two different types of Playwright installation:
 
-- Playwright library – minimal and browser automation focused.  
-- Playwright test – Playwright library extended with the testing framework, 
-enables assertions, reporting, parallelization, etc.
-Focused on e2e test automation.
+- Playwright library – minimal and browser automation focused.
+- Playwright test – Playwright library extended with the testing framework,
+  enables assertions, reporting, parallelization, etc.
+  Focused on e2e test automation.
 
-Two ways to install Playwright:
-1. manually – install the Playwright test:
+|                      | <figure style="text-align: center;">     <img src="images/cypress.png" alt="Cypress logo" width="150"/>   </figure> | <figure style="text-align: center;">     <img src="images/playwright.png" alt="Playwright logo" width="150"/>   </figure> |
+|----------------------|---------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------|
+| Install - npm        | `npm install cypress --save-dev`                                                                                    | `npm install @playwright/test --save-dev` <br />then <br />`npx playwright install --with-deps`                           |
+| Install - yarn       | `yarn add cypress --dev`                                                                                            | `yarn create playwright`                                                                                                  |
+| Scaffold new project | Via UI, after the first `npx cypress open`                                                                          | `npm init playwright@latest`                                                                                              |
 
-`npm install -D @playwright/test`
 
-And then install browsers:
-
-`npx playwright install`
-
-2. scaffolding a new project:
-
-`npm init playwright@latest`
-
-# Writing some tests
+# Writing tests
 ## Application under test
 https://github.com/cypress-io/cypress-realworld-app  
-http://localhost:3000
+Frontend: http://localhost:3000  
+Backend: http://localhost:3001
 
 ## !Show me the code!
 

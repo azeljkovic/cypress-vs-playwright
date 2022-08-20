@@ -26,7 +26,7 @@
 | GitHub issues      | https://github.com/cypress-io/cypress/issues                                                                        | https://github.com/microsoft/playwright/issues                                                                            |
 | StackOverflow      | https://stackoverflow.com/questions/tagged/cypress                                                                  | https://stackoverflow.com/questions/tagged/playwright                                                                     |
 | Chat               | https://discord.gg/bkcR8bvUBZ                                                                                       | https://aka.ms/playwright-slack                                                                                           |
-| Ambassador program | https://www.cypress.io/ambassadors/                                                                                 | Announced...                                                                                                              |
+| Ambassador program | https://www.cypress.io/ambassadors                                                                                  | https://playwright.dev/community/ambassadors                                                                              |
 
 
 # Pace of development (June 2022)

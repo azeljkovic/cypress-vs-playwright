@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "cy:run": "npx cypress run --browser chrome",
-    "cy:open": "npx cypress open --browser chrome --e2e",
+    "cy:open": "npx cypress open",
+    "cy:open-chrome": "npx cypress open --browser chrome --e2e",
     "pw:run": "npx playwright test",
     "pw:run-headed": "npx playwright test --headed",
     "pw:run-test": "npx playwright test playwright/tests/uiLogin2.spec.ts --headed",
